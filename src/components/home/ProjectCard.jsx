@@ -5,7 +5,7 @@ import Skeleton from "react-loading-skeleton";
 import axios from "axios";
 
 const ProjectCard = ({ value }) => {
-
+  
   const {
     name,
     description,

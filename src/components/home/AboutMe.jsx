@@ -49,10 +49,10 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
 
           <div className={`col-lg-${showPic ? "7" : "12"}`}>
             <h2 className="display-4 mb-5 text-center">{heading}</h2>
-            <p style={{ fontWeight:'bold' }} className="lead ml-4">Name : {message.name}</p>
-            <p style={{ fontWeight:'bold' }} className="lead ml-4">Birth : {message.birth}</p>
-            <p style={{ fontWeight:'bold' }} className="lead ml-4">Education : {message.university}</p>
-            <p style={{ fontWeight:'bold' }} className="lead ml-4">Promise : {message.promise}</p>
+            <p style={{ fontWeight:'bold' }} className="lead ml-">Name : {message.name}</p>
+            <p style={{ fontWeight:'bold' }} className="lead ml-">Birth : {message.birth}</p>
+            <p style={{ fontWeight:'bold' }} className="lead ml-">Education : {message.university}</p>
+            <p style={{ fontWeight:'bold' }} className="lead ml-">Promise : {message.promise}</p>
           </div>
         </div>
       </div>

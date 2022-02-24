@@ -1,7 +1,7 @@
 {
   "name": "developers-portfolio",
   "description": "A personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects.",
-  "homepage": "/home",
+  "homepage": "https://github.com/youngmin940629/portpolio.git",
   "version": "2.0.0",
   "private": true,
   "author": {
@@ -12,7 +12,6 @@
   "dependencies": {
     "axios": "^0.19.2",
     "bootstrap": "^4.5.2",
-    "gh-pages": "^2.2.0",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
@@ -50,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }

@@ -104,7 +104,8 @@ const frontProject = {
       githubUrl: 'https://github.com/youngmin940629/HawJowing-pjt',
       language : ['react', 'spring'],
       img : require('../assets/img/haejwoing.png'),
-      explanation: '모바일웹으로 구현한 sns로, 선택장애가 있는 사람들을 위해 프로젝트를 진행하였습니다. 선택에 망설여 질때 주변 친구들에게 골라달라하여 결정하는데 참고를 할 수 있는 sns를 만들어보자에서 시작된 프로젝트입니다.',
+      explanation: `모바일웹으로 구현한 sns로, 선택장애가 있는 사람들을 위해 프로젝트를 진행하였습니다. 
+      선택의 기로에 놓여있을때 항상 망설여지는 사람들에게 주변 지인들의 선택으로 도움을 받을 수 있지 않을까 하는 생각으로 시작된 프로젝트입니다.`,
     },
     {
       name : 'whatcha clone coding',

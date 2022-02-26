@@ -1,7 +1,7 @@
 {
   "name": "developers-portfolio",
   "description": "A personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects.",
-  "homepage": "https://github.com/youngmin940629/portpolio.git",
+  "homepage": "https://youngmin940629.github.io",
   "version": "2.0.0",
   "private": true,
   "author": {
@@ -27,10 +27,10 @@
     "typescript": "^3.9.7"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "custom-deploy": "node pages.js"

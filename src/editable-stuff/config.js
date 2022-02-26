@@ -74,8 +74,8 @@ const skills = {
     { name: "HTML/CSS", value: 63 },
     { name: "Python", value: 85 },
     { name: "Django", value: 75 },
-    { name: "C/C++", value: 35 },
     { name: "SQL", value: 70 },
+    { name: "C/C++", value: 30 },
   ],
   softSkills: [
     { name: "긍정적", value: 99 },

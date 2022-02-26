@@ -1,3 +1,4 @@
+
 // Navigation Bar SECTION
 const navBar = {
   show: true,
@@ -94,5 +95,31 @@ const contact = {
   email: "gjdudals1237@gmail.com",
   number: "+82 10-2112-3873",
 };
-
-export { navBar, mainBody, about, repos, skills, contact };
+const frontProject = {
+  show: true,
+  heading: "Achieved project",
+  projects: [
+    { 
+      name : 'HaeJowing',
+      githubUrl: 'https://github.com/youngmin940629/HawJowing-pjt',
+      language : ['react', 'spring'],
+      img : require('../assets/img/haejwoing.png'),
+      explanation: '모바일웹으로 구현한 sns로, 선택장애가 있는 사람들을 위해 프로젝트를 진행하였습니다. 선택에 망설여 질때 주변 친구들에게 골라달라하여 결정하는데 참고를 할 수 있는 sns를 만들어보자에서 시작된 프로젝트입니다.',
+    },
+    {
+      name : 'whatcha clone coding',
+      githubUrl: 'https://github.com/youngmin940629/React/tree/master/watchout-pedia-clone/watchout-pedia-clone',
+      language: ['react', 'typescript'],
+      img : require('../assets/img/clonecoding.png'),
+      explanation: 'React를 학습하면서 배운것들을 실제 프로젝트에 적용하기위해 연습한 클론코딩 프로젝트입니다. tmdb api를 활용한 데이터로 영화 & TV 사이트 구현을 연습하였습니다.',
+    },
+    {
+      name : 'movie recommend site',
+      githubUrl: 'https://github.com/youngmin940629/toy_project_moviesite',
+      language: ['vue', 'django'],
+      img : require('../assets/img/movierecommend.png'),
+      explanation: '이 프로젝트에선 풀스택으로 진행하였고 api를 이용하여 데이터베이스를 구축한 뒤 사용자의 사이트 이용한 데이터를 토대로 영화를 추천해주는 영화추천 커뮤니티 사이트를 구현하였습니다.',
+    }
+  ]
+}
+export { navBar, mainBody, about, repos, skills, contact, frontProject };

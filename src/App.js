@@ -7,6 +7,7 @@ import {
   repos,
   skills,
   contact,
+  frontProject,
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
@@ -14,6 +15,7 @@ import Project from "./components/home/Project";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Skills from "./components/home/Skills";
+import FrontProject from "./components/home/FrontProject";
 // import { Blog } from "./components/blog/Blog";
 // import BlogPost from "./components/blog/BlogPost";
 import Contact from "./components/home/Contact.jsx";
@@ -39,12 +41,15 @@ const Home = React.forwardRef((props, ref) => {
       )}
       {repos.show && (
         <Project
-          heading={repos.heading}
-          username={repos.gitHubUsername}
-          length={repos.reposLength}
-          specfic={repos.specificRepos}
+        heading={repos.heading}
+        username={repos.gitHubUsername}
+        length={repos.reposLength}
+        specfic={repos.specificRepos}
         />
-      )}
+        )}
+        {frontProject.show && (
+          <FrontProject frontProject={frontProject}/>
+        )}
       {skills.show && (
         <Skills
           heading={skills.heading}

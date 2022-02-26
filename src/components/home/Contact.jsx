@@ -4,7 +4,7 @@ import {BsFillTelephoneInboundFill} from "react-icons/bs"
 
 
 const contact = ({ heading, email, number }) => {
-  console.log(number)
+
   return (
     <>
       <h2 className="display-4 pb-3 text-center">{heading}</h2>

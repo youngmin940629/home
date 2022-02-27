@@ -34,6 +34,9 @@ export default function FrontProject({frontProject}) {
                     <Language>languages : {project.language.map(lang=> <LanguageContent>{lang}</LanguageContent>)} </Language>
                     <Explanation>{project.explanation}</Explanation>
                     </Card.Text>
+                    <a href={project.githubUrl} target=" _blank" className="btn btn-outline-secondary">
+                        <i className="fab fa-github" /> Repo
+                    </a>
                     </Card.Body>
                 </Card>
                 </Col>

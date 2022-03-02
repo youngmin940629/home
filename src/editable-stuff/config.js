@@ -61,7 +61,7 @@ const repos = {
   heading: "Recent Projects & Study",
   gitHubUsername: "youngmin940629", //i.e."johnDoe12Gh"
   reposLength: 4,
-  specificRepos: ['HawJowing-pjt', 'React', 'algorithm', 'Cpp_study'],
+  specificRepos: ['HawJowing-pjt', 'CS_study', 'algorithm' , 'React'],
 };
 
 // SKILLS SECTION

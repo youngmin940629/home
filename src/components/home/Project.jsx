@@ -28,16 +28,25 @@ const Project = ({ heading, username, length, specfic }) => {
   const fetchRepos = useCallback(async () => {
     let repoList = [];
     try {
-      for (let repoName of specfic) {
-        const response = await axios.get(`${specficReposAPI}/${repoName}`);
-        repoList.push(response.data);
+      // getting all repos
+      const response = await axios.get(allReposAPI);
+      // slicing to the length
+      repoList = [...response.data.slice(0, length)];
+      // adding specified repos
+      try {
+        for (let repoName of specfic) {
+          const response = await axios.get(`${specficReposAPI}/${repoName}`);
+          repoList.push(response.data);
+        }
+      } catch (error) {
+        console.error(error.message);
       }
+      // setting projectArray
+      // TODO: remove the duplication.
+      setProjectsArray(repoList);
     } catch (error) {
-      console.error(error.message);
+      console.error(error.message)
     }
-    // setting projectArray
-    // TODO: remove the duplication.
-    setProjectsArray(repoList);
   }, [allReposAPI, length, specfic, specficReposAPI]);
 
   useEffect(() => {

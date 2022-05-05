@@ -31,7 +31,15 @@ const Project = ({ heading, username, length, specfic }) => {
       // getting all repos
       const response = await axios.get(allReposAPI);
       // slicing to the length
-      repoList = [...response.data.slice(0, length)];
+      var idx = 0
+      while (repoList.length < 4) {
+        if (response.data[idx].name !== 'home' && response.data[idx].name !== 'github-stats-box')
+        {
+          repoList.push(response.data[idx])
+        }
+        idx += 1
+      }
+      
       // adding specified repos
       try {
         for (let repoName of specfic) {

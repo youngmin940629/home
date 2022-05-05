@@ -58,10 +58,10 @@ const about = {
 //      i.e ["repository-1", "repo-2"]
 const repos = {
   show: true,
-  heading: "Recent Projects & Study",
+  heading: "Recent Repository",
   gitHubUsername: "youngmin940629", //i.e."johnDoe12Gh"
   reposLength: 4,
-  specificRepos: ['HawJowing-pjt', 'CS_study', 'algorithm' , 'React'],
+  specificRepos: [],
 };
 
 // SKILLS SECTION
@@ -99,6 +99,13 @@ const frontProject = {
   show: true,
   heading: "Achieved project",
   projects: [
+    {
+      name : 'Moving',
+      githubUrl: 'https://github.com/youngmin940629/Moving',
+      language: ['Next.js', 'django', 'Python'],
+      img : require('../assets/img/moving.png'),
+      explanation: 'Nextjs를 이용하여 상황에 맞게 SSR & CSR을 구현하였습니다. 백엔드에서는 Django를 이용한 서버를 구축하였고 사용자가 평점을 주는 데이터를 numpy, pandas, scikit-learn, scipy 등 라이브러리를 이용하여 잠재요인 협업필터링 & 코사인 유사도를 활용한 추천 알고리즘으로 영화를 추천해주는 프로젝트 입니다.',
+    },
     { 
       name : 'HaeJowing',
       githubUrl: 'https://github.com/youngmin940629/HawJowing-pjt',
@@ -114,13 +121,6 @@ const frontProject = {
       img : require('../assets/img/clonecoding.png'),
       explanation: 'React를 학습하면서 배운것들을 실제 프로젝트에 적용하기위해 연습한 클론코딩 프로젝트입니다. tmdb api를 활용한 데이터로 영화 & TV 사이트 구현을 연습하였습니다.',
     },
-    {
-      name : 'movie recommend site',
-      githubUrl: 'https://github.com/youngmin940629/toy_project_moviesite',
-      language: ['vue', 'django'],
-      img : require('../assets/img/movierecommend.png'),
-      explanation: '이 프로젝트에선 풀스택으로 진행하였고 api를 이용하여 데이터베이스를 구축한 뒤 사용자의 사이트 이용한 데이터를 토대로 영화를 추천해주는 영화추천 커뮤니티 사이트를 구현하였습니다.',
-    }
   ]
 }
 export { navBar, mainBody, about, repos, skills, contact, frontProject };
